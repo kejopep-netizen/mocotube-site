@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0d0a">
+  <meta name="description" content="MocoTube é um player de música gratuito para Windows e Android, com letras sincronizadas, playlists e temas personalizados.">
+  <title>MocoTube — música do seu jeito</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#principal">Pular para o conteúdo</a>
+  <header class="top">
+    <nav class="container nav" aria-label="Navegação principal">
+      <a href="#inicio" class="brand"><img src="assets/logo.png" alt="" width="35" height="35">MocoTube</a>
+      <div class="nav-links"><a href="#recursos">Recursos</a><a href="#galeria">Galeria</a><a href="#codigo">Código</a></div>
+      <a href="#downloads" class="nav-download">Downloads <span aria-hidden="true">↘</span></a>
+    </nav>
+  </header>
+
+  <main id="principal">
+    <section id="inicio" class="hero container" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Player de música para Windows e Android</p>
+        <h1 id="hero-title">O seu Spotify,<br><em>feito do seu jeito.</em></h1>
+        <p class="lead">MocoTube é um player de música gratuito e leve. Sem anúncios. Sem assinaturas.</p>
+        <div class="downloads" id="downloads">
+          <a class="button primary" href="https://www.mediafire.com/file/cp26ejlncvfcgs8/MocoTube+Flutter.rar/file" rel="noopener noreferrer">
+            <span aria-hidden="true">↓</span> Baixar para Windows
+          </a>
+          <a class="button secondary" href="https://www.mediafire.com/file/spg7lt2slfq1wmf/MocoTube+1.0.8.apk/file" rel="noopener noreferrer">
+            <span aria-hidden="true">↓</span> Baixar para Android
+          </a>
+        </div>
+        <p class="formats">Windows e APK para Android via MediaFire</p>
+      </div>
+    </section>
+
+    <section id="recursos" class="section container">
+      <div class="section-head"><p class="eyebrow">Recursos</p><h2>Seu som, no seu ritmo.</h2></div>
+      <div class="features">
+        <article class="card"><span class="feature-icon" aria-hidden="true">ϟ</span><h3>Leve no dia a dia</h3><p>Um player compacto para ouvir música enquanto você faz outras coisas.</p></article>
+        <article class="card"><span class="feature-icon" aria-hidden="true">≋</span><h3>Letras sincronizadas</h3><p>Acompanhe a linha certa e avance na faixa tocando na letra.</p></article>
+        <article class="card feature-wide"><span class="feature-icon" aria-hidden="true">↗</span><h3>Suas playlists do Spotify, por link</h3><p>Cole o link de uma playlist pública, confira as faixas e salve na biblioteca. Sem login do Spotify.</p></article>
+        <article class="card feature-wide"><span class="feature-icon" aria-hidden="true">◉</span><h3>Do branco puro à sua própria paleta</h3><p>Escolha o destaque, o fundo e os cards. Use sua foto como wallpaper e ajuste o desfoque.</p></article>
+        <article class="card"><span class="feature-icon" aria-hidden="true">▶</span><h3>Sem anúncios no app</h3><p>Controle a fila e volte às músicas da sua biblioteca direto pelo player.</p></article>
+      </div>
+    </section>
+
+    <section id="galeria" class="section container">
+      <div class="section-head"><p class="eyebrow">Galeria</p><h2>MocoTube em ação.</h2></div>
+      <div class="gallery" aria-roledescription="carrossel" aria-label="Interface do MocoTube">
+        <div class="screens" id="screens">
+          <figure class="slide" id="tela-player">
+            <div class="screen-wrap"><img src="assets/windows-agora-tocando.png" width="1255" height="710" loading="lazy" alt="Player no Windows, com a capa de The Diary of Alicia Keys, letra à direita e controles embaixo."></div>
+            <figcaption><strong>Agora tocando</strong><span>Windows · Capa, letra e controles lado a lado</span></figcaption>
+          </figure>
+          <figure class="slide" id="tela-artista">
+            <div class="screen-wrap"><img src="assets/windows-artista.png" width="1252" height="698" loading="lazy" alt="Perfil de Daniel Caesar no MocoTube, com a aba Músicas selecionada."></div>
+            <figcaption><strong>Músicas do artista</strong><span>Windows · Faixas organizadas por artista</span></figcaption>
+          </figure>
+          <figure class="slide" id="tela-busca">
+            <div class="screen-wrap"><img src="assets/windows-busca.png" width="1256" height="705" loading="lazy" alt="Busca por Daniel Caesar, com acesso ao perfil do artista e Superpowers como resultado principal."></div>
+            <figcaption><strong>Busca</strong><span>Windows · Encontre faixas e artistas</span></figcaption>
+          </figure>
+          <figure class="slide" id="tela-albuns">
+            <div class="screen-wrap"><img src="assets/windows-albuns.png" width="1251" height="702" loading="lazy" alt="Álbuns de Daniel Caesar no MocoTube, incluindo Never Enough e Freudian."></div>
+            <figcaption><strong>Álbuns do artista</strong><span>Windows · Discografia e EPs</span></figcaption>
+          </figure>
+          <figure class="slide" id="tela-descobrir">
+            <div class="screen-wrap"><img src="assets/windows-descobrir.png" width="1253" height="703" loading="lazy" alt="Tela Descobrir do MocoTube com o estilo R&amp;B selecionado e recomendações de faixas."></div>
+            <figcaption><strong>Descobrir</strong><span>Windows · Recomendações por estilo</span></figcaption>
+          </figure>
+          <figure class="slide" id="tela-android">
+            <div class="screen-wrap mobile-screen">
+              <img src="assets/android-discover.png" width="1080" height="2340" loading="lazy" alt="MocoTube no Android com a tela Descobrir, sugestões por estilo e o miniplayer.">
+            </div>
+            <figcaption><strong>MocoTube no celular</strong><span>Android · Descobrir e miniplayer</span></figcaption>
+          </figure>
+        </div>
+        <div class="gallery-controls" hidden>
+          <button class="round" type="button" data-direction="-1" aria-label="Imagem anterior">←</button>
+          <output id="gallery-status" aria-live="polite"></output>
+          <button class="round" type="button" data-direction="1" aria-label="Próxima imagem">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="codigo" class="section container">
+      <div class="source">
+        <div><p class="eyebrow">Código-fonte</p><h2>Um projeto gratuito.</h2>
+        <p>O código desta página está disponível sob licença MIT. O MocoTube é oferecido gratuitamente e sem fins lucrativos.</p></div>
+        <a class="button secondary" href="MocoTube-Site-Codigo.zip" data-source download>Ver Código-Fonte <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <a href="#inicio" class="brand"><img src="assets/logo.png" alt="" width="30" height="30">MocoTube</a>
+    <div><p>Desenvolvido por PiresHUB.</p><p>Este app é para uso pessoal e educacional. As músicas são reproduzidas via YouTube. Não hospedamos nenhum arquivo de áudio.</p></div>
+  </footer>
+</body>
+</html>
